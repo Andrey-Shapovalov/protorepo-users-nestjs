@@ -1,0 +1,24 @@
+{
+  "name": "protorepo-users-nestjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/users.pb.js",
+  "types": "lib/users.pb.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-proto": "^1.148.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@nestjs/microservices": "^9.4.2",
+    "rxjs": "^7.8.1"
+  }
+}

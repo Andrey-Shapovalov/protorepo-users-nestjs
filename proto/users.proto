@@ -1,0 +1,38 @@
+// users.proto
+syntax = "proto3";
+
+package users;
+
+option go_package = "github.com/golang/protobuf/tree/master/protoc-gen-go";
+
+import "google/protobuf/empty.proto";
+
+service UsersService {
+  rpc GetAllUsers (GetAllUsersRequest) returns (GetAllUsersResponse) {}
+  rpc CreateUser (CreateUserRequest) returns (google.protobuf.Empty) {}
+  rpc DeleteUser (DeleteUserRequest) returns (google.protobuf.Empty) {}
+}
+
+message User {
+  int32 user_id = 1;
+  string name = 2;
+  string email = 3;
+}
+
+message GetAllUsersRequest {
+  string limit = 1;
+  string offset = 2;
+}
+
+message GetAllUsersResponse {
+    repeated User users = 1;
+}
+
+message CreateUserRequest {
+  string name = 1;
+  string email = 2;
+}
+
+message DeleteUserRequest {
+  int32 user_id = 1;
+}
