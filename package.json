@@ -13,12 +13,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "ts-proto": "^1.148.1",
-    "typescript": "^5.0.4"
-  },
   "dependencies": {
     "@nestjs/microservices": "^9.4.2",
     "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "grpc-tools": "^1.12.4",
+    "ts-proto": "^1.149.0",
+    "typescript": "^5.0.4"
   }
 }
